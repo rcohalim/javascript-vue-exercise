@@ -93,7 +93,7 @@ export default {
       const api_key = 'ceede1b6b3f225c1d5656cff0508e06a';
       const base_url = `https://api.openweathermap.org/data/2.5/forecast?q=${this.citySearch}&appid=${api_key}&units=metric`;
 
-      const icon_collection = `http://openweathermap.org/img/wn/${this.icon}@2x.png`;
+      // const icon_collection = `http://openweathermap.org/img/wn/${this.icon}@2x.png`;
 
       // fetch the JSON data from the base URL
       const response = await fetch(base_url);
@@ -109,8 +109,10 @@ export default {
 
       // const img
 
+      // to retrieve the current date
       const today_dt = this.addDays(data.list[0].dt_txt, 0);
 
+      // filter function to only includes weather's data from today's timestamp
       const data_today = data.list
         .filter(function (entry) {
           return (entry.dt_txt).includes(today_dt)
@@ -118,10 +120,12 @@ export default {
 
       console.log(data_today);
 
+      // to retrieve tomorrow's date
       const tomorrow_dt = this.addDays(data.list[0].dt_txt, 1);
       
       console.log(tomorrow_dt);
       
+      // filter function to only includes weather's data from tomorrow's timestamp
       const data_tmr = data.list.filter(function (entry) {
         return (entry.dt_txt).includes(tomorrow_dt);
       });
@@ -130,6 +134,7 @@ export default {
 
     },
 
+    // function to add day to retrieve tomorrow's date
     addDays: function(date, days) {
       var result = new Date(date);
       result.setDate(result.getDate() + days);

@@ -24,8 +24,6 @@
       </div>
 
       <CityCard/>
-      <WeatherView/>
-
 
       <div class="card rounded p-5 my-3 shadow-lg back-card overflow-hidden">
         <h2 class="text-start">{{weather.cityName}}</h2>
@@ -76,7 +74,6 @@
 
 <script>
 import CityCard from './components/CityCard.vue';
-import WeatherView from './components/WeatherView.vue';
 
 export default {
   data() {
@@ -140,8 +137,7 @@ export default {
   },
 
   components: {
-    CityCard,
-    WeatherView
+    CityCard
   }
 }
 </script>

@@ -23,7 +23,7 @@
         <!-- <CityCard /> -->
       </div>
 
-      <CityCard/>
+      <CityCard :city = "weather.cityName"/>
 
       <div class="card rounded p-5 my-3 shadow-lg back-card overflow-hidden">
         <h2 class="text-start">{{weather.cityName}}</h2>
@@ -93,17 +93,21 @@ export default {
       const api_key = 'ceede1b6b3f225c1d5656cff0508e06a';
       const base_url = `https://api.openweathermap.org/data/2.5/forecast?q=${this.citySearch}&appid=${api_key}&units=metric`;
 
-        const response = await fetch(base_url);
-        const data = await response.json();
-        console.log(data);
+      const icon_collection = `http://openweathermap.org/img/wn/${this.icon}@2x.png`;
 
-        this.citySearch = "";
-        this.weather.cityName = data.city.name;
-        this.weather.country = data.city.country;
+      // fetch the JSON data from the base URL
+      const response = await fetch(base_url);
+      const data = await response.json();
+      console.log(data);
 
-        // this.weather.icon = data.
+      // assigning values to variables that are going to be used
+      this.citySearch = "";
+      this.weather.cityName = data.city.name;
+      this.weather.country = data.city.country;
 
-      
+      // this.weather.icon = data.list.weather[0].icon;
+
+      // const img
 
       const today_dt = this.addDays(data.list[0].dt_txt, 0);
 

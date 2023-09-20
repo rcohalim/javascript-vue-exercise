@@ -3,7 +3,11 @@
     <div class="container-lg container">
       <div class="title-container">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <h1 class="title text-center">Good Afternoon!</h1>
+=======
+        <h1 class="title text-center">Good Morning!</h1>
+>>>>>>> parent of 6c94d2e (change good morning to good night)
 =======
         <h1 class="title text-center">Good Morning!</h1>
 >>>>>>> parent of 6c94d2e (change good morning to good night)

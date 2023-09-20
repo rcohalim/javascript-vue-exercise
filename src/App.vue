@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container-lg container">
       <div class="title-container">
-        <h1 class="title text-center">Good Night!</h1>
+        <h1 class="title text-center">Good Afternoon!</h1>
       </div>
       
       <div class="form-container d-flex mt-3 mb-5 justify-content-end">

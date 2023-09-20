@@ -8,6 +8,11 @@
         <h1 class="title text-center">Good Night!</h1>
         <h1 class="title text-center">Good Food!</h1>
         <h1 class="title text-center">Good Life!</h1>
+        <h1 class="title text-center">Good Mood!</h1>
+        <h1 class="title text-center">Good Day!</h1>
+        <h1 class="title text-center">Good Pet!</h1>
+        <h1 class="title text-center">Good Dog!</h1>
+        <h1 class="title text-center">Good asdfjkl;!</h1>
 
       </div>
       

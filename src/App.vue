@@ -2,7 +2,11 @@
   <div id="app">
     <div class="container-lg container">
       <div class="title-container">
+<<<<<<< HEAD
         <h1 class="title text-center">Good Afternoon!</h1>
+=======
+        <h1 class="title text-center">Good Morning!</h1>
+>>>>>>> parent of 6c94d2e (change good morning to good night)
       </div>
       
       <div class="form-container d-flex mt-3 mb-5 justify-content-end">
